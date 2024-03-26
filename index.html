@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobremim</title>
+    <style>
+        body {
+            margin:0;
+        }
+        .container{
+            display:grid
+        }
+        header{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #030d4f;
+        }
+        .menu{
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+        }
+        .imagem_bruno{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .principal{
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 1px;
+            padding-right: 1px;
+            text-align: justify;
+        }
+        footer{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #030d4f;
+            color: white;
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+            color: black
+        }
+        a:link {
+            text-decoration: none;
+            padding: 8px 166px;
+            border: solid black 5px;
+        }
+        .fontedes{
+            font-size: 5rem;
+            color: black;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: black;
+            color: red;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 800px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_bruno {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1 style="color:white; text-align: center;">Bruno Costa Sampaio</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre Mim</a></li>
+            <li><a href="formação.html">Formações Academicas</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_bruno">
+            <img src="imagem_bruno.jpeg" width="255;">
+            <div class="infos">
+                <p><strong>Nome:</strong>Bruno Costa Sampaio</p>
+                <p>
+                    <strong>Data de Nascimento:</strong>
+                    04/09/2000
+                </p>
+            </div>
+        </aside>
+        <section class="principal">
+            <h1>
+                Sobre Mim
+            </h1>
+            <p>Atualmente sou motociclista militar e batedor da Força Aérea Brasileira.</p>
+            <p>Tenho uma vida bem ativa, gosto de fazer esportes e faço musculação.</p>
+            <p>Comecei a estudar programação no ano passado e desde então me apaixonei pela área, pretendo trabalhar para uma empresa gringa no futuro.</p>  
+            <img src="batedor linha amarela.jpg" width="600">
+            <p>Imagem de uma escolta militar realizada na Linha Amarela, Rj.</p>
+        </section>
+</head>
+<body>
+    
+</body>
+</html>
